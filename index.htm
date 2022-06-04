@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pagina de estudos HTML</title>
+<meta charset="utf-8">
+</head>
+<body>
+<main>
+    <article>
+             <h1 style="color:green">Título - representação de artigo</h1>
+             <h2 style="color:red"><i>What is Lorem Ipsum?</i></h2>
+<p> <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong><br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+             <h3>Inserção de imagem com link, referência imagem do Google</h3>
+<a href="www.google.com.br"> link do google </a>
+<img src="./imagens/google.png" alt="google" width="140" height="150">
+</article>
+</main>
+<hr>
+            <h2>Aqui começa um exemplo de listas ordenadas feitas em HTML</h2>
+            <h3>Listas ordenadas de nomes</h3>
+
+<ol>
+    <li>Anderson</li>
+    <li>Bruno</li>
+    <li>Carlos</li>
+</ol>
+
+            <h3>Aqui começa um exemplo de listas não ordenadas</h3>
+
+<ul>
+    <li>batata</li>
+    <li>azeitona</li>
+    <li>cebola</li>
+</ul>
+
+            <h3>Aqui começa um exemplo de lista descritiva</h3>
+
+<dl>
+    <dt>receita de estrogonofe</dt>
+    <dd>uma caixa de creme de leite, 1kg de frango e um sachê de molho de tomate ou ketchup</dd>
+    <dt>lista de compra</dt>
+    <dd>açúcar, sal, tempero, arroz e feijão.</dd>
+</dl>
+
+<hr>
+            <h2>Aqui começa um exemplo de utilização de tabelas</h2>
+            <h3>Tabela de exemplo</h3>
+
+<section>
+<table border="1">
+
+<tr>
+    <th>Aluno</th>
+    <th>Discipina</th>
+    <th>Nota</th>
+</tr>
+
+<tr>
+    <td>Anderson</td>
+    <td>HTML</td>
+    <td>9,5</td>
+</tr>
+
+<tr>
+    <td>Bruno</td>
+    <td>HTML</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>Carlos</td>
+    <td>HTML</td>
+    <td>7,8</td>
+</tr>
+</table>
+</section>
+<hr>
+            <h2>Aqui começa um exemplo de inserção de vídeos e áudio</h2>
+
+<video src="https://www.youtube.com/watch?v=31vjCNgsGy0&t=80s" controle></video>
+<audio src="./(coloque o caminho do audio na pasta" controls autoplay loop></audio>
+<hr>
+            <h2>A partir daqui veremos como criar formulários</h2>
+
+<form action="processa_form.php" method="post">
+<fieldset>
+    <legend>Dados gerais</legend>
+       <label for="nome">Nome:</label>
+         <input type="text" minlength="3" id="nome" name="nome" required/>
+       <label for="data_nascimento">data de nascimento</label>
+         <input type="text" id="data_nascimento" name="data_nascimento"/>
+       <label for="cpf">CPF</label>
+         <input type="cpf" maxlength="11" minlength="11" id="cpf" name="cpf" required/>
+       <label for="celular">N° do celular:</label>
+         <input type="cel" maxlength="13"  id="cel" name="cel" placeholder="11-99999-9999" pattern="[0-9] {2}-[0-9]{5}-[0-9]{4}" required>
+</fieldset>
+<fieldset>
+    <legend>Endereço</legend>
+
+        <label for="tipo_endereço">Tipo:</label>
+    <select id="tipo_endereço">
+        <option value="">Selecione</option>
+        <option value="rua">Rua</option>
+        <option value="estrada">Estrada</option>
+        <option value="rodovia">Rodovia</option>
+        <option value="outro">Outro</option>
+    </select>
+
+        <label for="logradouro_endereço">Logradouro:</label>
+          <input type="text" id="logradouro_endereço"/>
+        <label for="numero_endereço">N°:</label>
+          <input type="text" id="numero_endereço"/>
+        <label for="complemento_endereço">Complemento:</label>
+          <input type="text" id="complemento_endereço"/>
+</fieldset>
+
+<fieldset>
+    <legend>Fale conosco</legend>
+         <label for="tipo_msg">Tipo de mensagem:</label>
+         <label for="sugestão">Sugestão</label>
+           <input type="radio" id="tipo_msg" value="sugestão"/>
+         <label for="critica">Crítica</label>
+           <input type="radio" id="tipo_msg" value="critica"/>
+         <label for="elogio">Elogio</label>
+           <input type="radio" id="tipo_msg" value="elogio"/><br/>
+         <label for="msg">Mensagem:</label>
+           <textarea id="msg" cols="100" rows="5"></textarea>
+</fieldset>
+
+<fieldset>
+    <button type="submit">Enviar mensagem</button>
+    <button type="reset">Limpar o formulário</button>
+</fieldset>
+</form>
+</body>
+</html>
